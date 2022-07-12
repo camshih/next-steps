@@ -59,7 +59,7 @@ const Navbar = () => {
           className={
             !nav
               ? "hidden"
-              : "w-full bg-stone-800 text-white hover:text-indigo-50 "
+              : "w-full bg-stone-800 text-white hover:text-indigo-50 lg:hidden"
           }
         >
           {/* Look at implementing border-b-2 ease in from middle out */}
