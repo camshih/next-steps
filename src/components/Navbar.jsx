@@ -6,7 +6,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <nav className="w-full h-20 bg-stone-800 fixed">
+    <nav className="w-full h-20 z-10 bg-stone-800 fixed ">
       <div className="flex justify-between items-center w-full h-full px-4">
         <div className="flex">
           <h1 className="text-l font-bold text-white hover:text-cyan-50 sm:text-xl">
@@ -59,7 +59,8 @@ const Navbar = () => {
           className={
             !nav
               ? "hidden"
-              : "w-full bg-stone-800 text-white hover:text-indigo-50 lg:hidden"
+              : // : "absolute w-full bg-stone-800 text-white  hover:text-indigo-50 lg:hidden"
+                "absolute bg-stone-800 w-full px-8"
           }
         >
           {/* Look at implementing border-b-2 ease in from middle out */}
@@ -93,7 +94,16 @@ const Navbar = () => {
           >
             <a href="#">Locations</a>
           </li>
+          <div className="flex flex-col my-4">
+            <button className="uppercase px-2 border rounded-md bg-white text-black hover:bg-stone-800 hover:text-white hover:border-none duration-200">
+              Take the next step
+            </button>
+            <button className="px-4 text-white hover:text-indigo-50">
+              Sign In
+            </button>
+          </div>
         </ul>
+        
       </div>
     </nav>
   );
