@@ -26,9 +26,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="text-white bg-stone-800 text-center uppercase">
-        <h2>the best way to move</h2>
-      </div>
     </div>
   );
 };
