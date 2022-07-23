@@ -3,8 +3,8 @@ import mainImg from "./../assets/bball-court.jpg";
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen flex justify-between bg-stone-800">
-      <div className="w-full mt-20">
+    <div className="w-full h-screen flex flex-col justify-between bg-stone-800">
+      <div className="w-full mt-20 ">
         <div className="w-full h-[700px] bg-gray-900/90 absolute">
           <img
             className="w-full h-full object-cover mix-blend-overlay"
@@ -25,6 +25,9 @@ const Hero = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="text-white text-6xl text-center uppercase">
+        <h2>There are many ways to take the next step</h2>
       </div>
     </div>
   );
